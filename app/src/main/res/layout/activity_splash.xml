@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRIMES AT LOCATION"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Period of crime" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:hint="enter month and year(YYYY-MM)"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/et1"
+        android:text="Latitude of the Location" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:layout_centerHorizontal="true"
+        android:hint="enter latitude"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Longitude of the Location" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/tv4"
+        android:hint="enter longitude"
+        android:inputType="numberSigned|numberDecimal"/>
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Submit" />
+</RelativeLayout>
